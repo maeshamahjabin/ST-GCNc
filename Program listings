@@ -1,0 +1,12 @@
+I verify that I am the sole author of the programs contained in this folder, except where explicitly stated to the contrary.
+
+In this case, the framework is borrowed from https://github.com/yysijie/st-gcn, 
+except for modifications made in net/utils/graph.py, net/st_gcn.py and processor/recognition.py.
+
+Maesha Mahjabin
+25/04/2022
+
+# Program Listings
+Main folders:
+work_dir: contains the pretrained models
+net: contains the main graph structure
