@@ -9,16 +9,16 @@ Human Action Recognition (HAR) is the task of identifying actions performed by h
 Thanks for the framework provided by 'yysijie/st-gcn', which is source code of the published work ST-GCN in AAAI-2018. The github repo is https://github.com/yysijie/st-gcn. This project works with the original code and refactors it.
 
 **References** <br />
-1. Yan, S., Xiong, Y., & Lin, D. (2018, April). Spatial temporal graph convolutional networks for skeleton-based action recognition. In Thirty-second AAAI conference on artificial intelligence.
+1. Yan, S., Xiong, Y., & Lin, D. (2018, April). Spatial temporal graph convolutional networks for skeleton-based action recognition. In Thirty-second AAAI conference on artificial intelligence. <br />
 
 **Data Preparation** <br />
-Download Raw 3D skeletal data from [16]: https://rose1.ntu.edu.sg/dataset/actionRecognition/ Allocate the dataset into ”data” folder and process data with: python data/ntu gendata.py
+Download Raw 3D skeletal data from: https://rose1.ntu.edu.sg/dataset/actionRecognition/ and allocate the dataset into ”data” folder and process data with: python data/ntu gendata.py  <br />  <br />
 **Training** <br />
-For training a new model run:
-python main.py recognition -c config/st gcn/dataset /train.yaml - -batch size 16 - -device 0 - -test batch size 16
+For training a new model run:  <br />
+python main.py recognition -c config/st gcn/dataset /train.yaml --batch size 16 --device 0 --test batch size 16  <br />  <br />
 **Testing**  <br />
-To test a new trained model, run the command:
-python main.py recognition -c config/st gcn/dataset /test.yaml - - weights path to model weights
-To test with pre-trained models (from this dissertation) run the command:
-python main.py recognition -c config/st gcn/kinetics-skeleton/test.yaml --weights work dir/recognition/dataset /ST GCN/epoch60 model.pt --batch size 16 --device 0 --test batch size 16
+To test a new trained model, run the command:  <br />
+python main.py recognition -c config/st gcn/dataset /test.yaml -- weights path to model weights  <br />  <br />
+To test with pre-trained models (from this dissertation) run the command:  <br />
+python main.py recognition -c config/st gcn/kinetics-skeleton/test.yaml --weights work dir/recognition/dataset /ST GCN/epoch60 model.pt --batch size 16 --device 0 --test batch size 16  <br />  <br />
 Note: dataset needs to be either ntu-xview or ntu-xsub.
