@@ -9,7 +9,10 @@ Human Action Recognition (HAR) is the task of identifying actions performed by h
 Thanks for the framework provided by 'yysijie/st-gcn', which is source code of the published work ST-GCN in AAAI-2018. The github repo is https://github.com/yysijie/st-gcn. This project works with the original code and refactors it.
 
 **References** <br />
-1. Yan, S., Xiong, Y., & Lin, D. (2018, April). Spatial temporal graph convolutional networks for skeleton-based action recognition. In Thirty-second AAAI conference on artificial intelligence. <br />
+1. Yan, S., Xiong, Y., & Lin, D. (2018, April). Spatial temporal graph convolutional networks for skeleton-based action recognition. In Thirty-second AAAI conference on artificial intelligence. <br /> <br />
+
+**Install** <br />
+git clone https://github.com/maeshamahjabin/ST-GCNc.git; cd st-gcn cd torchlight; python setup.py install; cd ..
 
 **Data Preparation** <br />
 Download Raw 3D skeletal data from: https://rose1.ntu.edu.sg/dataset/actionRecognition/ and allocate the dataset into ”data” folder and process data with: python data/ntu gendata.py  <br />  <br />
