@@ -21,7 +21,7 @@ For training a new model run:  <br />
 python main.py recognition -c config/st_gcn/dataset /train.yaml --batch size 16 --device 0 --test batch size 16  <br />  <br />
 **Testing**  <br />
 To test a new trained model, run the command:  <br />
-python main.py recognition -c config/st gcn/dataset /test.yaml -- weights path to model weights  <br />  <br />
+python main.py recognition -c config/st_gcn/dataset /test.yaml -- weights path to model weights  <br />  <br />
 To test with pre-trained models (from this dissertation) run the command:  <br />
 python main.py recognition -c config/st_gcn/dataset/test.yaml --weights work dir/recognition/dataset /ST_GCN/epoch70_model.pt --batch size 16 --device 0 --test batch size 16  <br />  <br />
 Note: dataset needs to be either ntu-xview or ntu-xsub.
