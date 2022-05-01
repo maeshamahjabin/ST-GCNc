@@ -1,6 +1,6 @@
 # ST-GCNc
-ST-GCNc
-
+ST-GCNc  <br />
+ <br /> **Note:** In this project the term "Validation Dataset" refers to the "Test Dataset". There is only Train and Test datasets used for this project; no seperate validation dataset has been used. The unlabelled "Test dataset" = "Validation dataset".  <br /> <br />
 **Abstract** <br />
 Human Action Recognition (HAR) is the task of identifying actions performed by humans in real time. HAR plays a crucial role in human-to-computer interactions enabling it to make novel Human-to-Computer Interaction (HCI) models.This paper proposes and verifies the enhancement of previously established ST-GCN model by enriching the message passing mechanism of Spatial Graph Convolutional Neural Network by incorporating more information about the nodes in the graph representation of the skeletons. It introduces a property called the clustering coefficients - the degree of aggregation of the nodes in the graph - into the graph-level update equations, which allows the model to capture richer information at each iteration. This enhancement is validated using the NTU-RGB+D dataset. The project findings effectively verified the work done in paper [1] and gave promising results for the proposed design improvements. The simulation results of the ST-GCNc model showed ~3.8% improvement in cross-view dataset and ~1.7% improvement in cross-sub dataset. With the modification of clustering coefficients, the ST-GCNc model continued to give positive results. 
 
