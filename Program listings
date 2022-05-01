@@ -10,3 +10,4 @@ Maesha Mahjabin
 Main folders:
 work_dir: contains the pretrained models
 net: contains the main graph structure
+config/st_gcn: contains Train and Test files for this project.
